@@ -1,0 +1,51 @@
+1T 000.0    Test
+4T A00.-    Cholera
+LZ
+5T A00.0    Cholera durch Vibrio cholerae O:1, Biovar cholerae
+5I          Klassische Cholera
+LZ
+5T A00.1    Cholera durch Vibrio cholerae O:1, Biovar eltor
+5I          El-Tor-Cholera
+LZ
+5T A00.9    Cholera, nicht näher bezeichnet
+LZ
+4T A01.-    Typhus abdominalis und Paratyphus
+LZ
+5T A01.0    Typhus abdominalis
+5I          Infektion durch Salmonella typhi
+5I          Typhoides Fieber
+LZ
+5T A01.1    Paratyphus A
+LZ
+5T A01.2    Paratyphus B
+LZ
+5T A01.3    Paratyphus C
+LZ
+5T A01.4    Paratyphus, nicht näher bezeichnet
+5I          Infektion durch Salmonella paratyphi o.n.A.
+LZ
+4T A02.-    Sonstige Salmonelleninfektionen
+4I          Inkl.:   Infektion oder Lebensmittelvergiftung durch Salmonellen
+                       außer durch Salmonella typhi und Salmonella paratyphi
+LZ
+LZ
+5T U99.0!   Nicht belegte Schlüsselnummer U99.0
+LZ
+5T U99.1!   Nicht belegte Schlüsselnummer U99.1
+LZ
+5T U99.2!   Nicht belegte Schlüsselnummer U99.2
+LZ
+5T U99.3!   Nicht belegte Schlüsselnummer U99.3
+LZ
+5T U99.4!   Nicht belegte Schlüsselnummer U99.4
+LZ
+5T U99.5!   Nicht belegte Schlüsselnummer U99.5
+LZ
+5T U99.6!   Nicht belegte Schlüsselnummer U99.6
+LZ
+5T U99.7!   Nicht belegte Schlüsselnummer U99.7
+LZ
+5T U99.8!   Nicht belegte Schlüsselnummer U99.8
+LZ
+5T U99.9!   Nicht belegte Schlüsselnummer U99.9
+LZ

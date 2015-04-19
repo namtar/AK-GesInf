@@ -1,0 +1,8 @@
+D:\VisualStudio\projects\AK-GesInf\AK-GesInf\bin\Debug\AK-GesInf.exe.config
+D:\VisualStudio\projects\AK-GesInf\AK-GesInf\bin\Debug\AK-GesInf.exe
+D:\VisualStudio\projects\AK-GesInf\AK-GesInf\bin\Debug\AK-GesInf.pdb
+D:\VisualStudio\projects\AK-GesInf\AK-GesInf\obj\Debug\AK-GesInf.csprojResolveAssemblyReference.cache
+D:\VisualStudio\projects\AK-GesInf\AK-GesInf\obj\Debug\AK_GesInf.Properties.Resources.resources
+D:\VisualStudio\projects\AK-GesInf\AK-GesInf\obj\Debug\AK-GesInf.csproj.GenerateResource.Cache
+D:\VisualStudio\projects\AK-GesInf\AK-GesInf\obj\Debug\AK-GesInf.exe
+D:\VisualStudio\projects\AK-GesInf\AK-GesInf\obj\Debug\AK-GesInf.pdb

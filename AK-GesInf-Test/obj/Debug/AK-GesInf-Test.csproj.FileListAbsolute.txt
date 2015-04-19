@@ -1,0 +1,10 @@
+D:\VisualStudio\projects\AK-GesInf\AK-GesInf-Test\obj\Debug\AK-GesInf-Test.csprojResolveAssemblyReference.cache
+D:\VisualStudio\projects\AK-GesInf\AK-GesInf-Test\bin\Debug\OrderedTest1.orderedtest
+D:\VisualStudio\projects\AK-GesInf\AK-GesInf-Test\bin\Debug\AK-GesInf-Test.dll
+D:\VisualStudio\projects\AK-GesInf\AK-GesInf-Test\bin\Debug\AK-GesInf-Test.pdb
+D:\VisualStudio\projects\AK-GesInf\AK-GesInf-Test\bin\Debug\AK-GesInf.exe
+D:\VisualStudio\projects\AK-GesInf\AK-GesInf-Test\bin\Debug\nunit.framework.dll
+D:\VisualStudio\projects\AK-GesInf\AK-GesInf-Test\bin\Debug\AK-GesInf.pdb
+D:\VisualStudio\projects\AK-GesInf\AK-GesInf-Test\bin\Debug\nunit.framework.xml
+D:\VisualStudio\projects\AK-GesInf\AK-GesInf-Test\obj\Debug\AK-GesInf-Test.dll
+D:\VisualStudio\projects\AK-GesInf\AK-GesInf-Test\obj\Debug\AK-GesInf-Test.pdb
