@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Windows.Forms;
 using AK_GesInf.classes;
 using AK_GesInf.classes.utils;
+using AK_GesInf.Properties;
 
 namespace AK_GesInf
 {
@@ -12,14 +13,41 @@ namespace AK_GesInf
 
         public Form1()
         {
+            // @See: http://www.codeproject.com/Articles/15013/Windows-Forms-User-Settings-in-C
             InitializeComponent();
 
             icd10Loader = new Icd10Loader();
-            FillIcd10View();
+            ConfigListView();
+            FillListViewData(new List<Pair<String, String>>());
+//            FillIcd10View();
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            // when form loads perform Settings parameter
+            if (Settings.Default.WindowState != null)
+            {
+                WindowState = Settings.Default.WindowState;
+            }
+        }
 
-        private void FillIcd10View()
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Settings.Default.WindowState = WindowState;
+
+            // when storing windows size mention the window state, because when window is minimized or maximized we will get invalid values.
+        }
+       
+
+        private void ConfigListView()
+        {
+            // some config
+            icd10View.GridLines = true;
+            icd10View.View = View.Details;
+            //            icd10View.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
+        }
+
+        private void FillListViewData(List<Pair<String, String>> data)
         {
             // @See: http://stackoverflow.com/questions/9008310/how-to-speed-adding-items-to-a-listview
 
@@ -27,40 +55,39 @@ namespace AK_GesInf
             icd10View.Columns.Clear();
             icd10View.Items.Clear();
 
-            // some config
-            icd10View.GridLines = true;
-            icd10View.View = View.Details;
-//            icd10View.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
-
             // add cols
             icd10View.Columns.Add("Code");
             icd10View.Columns.Add("Description");
-//            icd10View.Columns[1].AutoResize(ColumnHeaderAutoResizeStyle.ColumnContent);
 
             // add rows
 //            foreach (var content in icd10Loader.Content)
-//            {
-//                string[] arr = new string[2];
-//                arr[0] = content.Key;
-//                arr[1] = content.Value;
-//                icd10View.Items.Add(new ListViewItem(arr));
-//            }
-
-            // Due to performance issues limit to 100 entires until there is a specification to do some paging.
-            List<Pair<String, String>> contents = icd10Loader.Content;
-            int to = contents.Count < 100 ? contents.Count : 100;
-            for (var i = 0; i < 100; i++)
+            foreach (var content in data)
             {
-                Pair<String, String> content = contents[i];
-
                 string[] arr = new string[2];
                 arr[0] = content.Key;
                 arr[1] = content.Value;
                 icd10View.Items.Add(new ListViewItem(arr));
             }
 
-            // finally size columsn
+            // finally size columns
             icd10View.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
         }
+
+        private void listViewSearchButton_Click(object sender, EventArgs e)
+        {
+            // perform a search in key and description for the given searchBox content.
+            var searchString = listViewSearchBox.Text;
+            List<Pair<String, String>> values = icd10Loader.Content;
+            List<Pair<String, String>> searchResult = values.FindAll(delegate(Pair<String, String> pair)
+            {
+                if (pair.Key.StartsWith(searchString) || pair.Value.StartsWith(searchString))
+                {
+                    return true;
+                }
+                return false;
+            });
+            FillListViewData(searchResult);
+        }
+      
     }
 }
