@@ -6,3 +6,4 @@ D:\VisualStudio\projects\AK-GesInf\AK-GesInf\obj\Debug\AK_GesInf.Properties.Reso
 D:\VisualStudio\projects\AK-GesInf\AK-GesInf\obj\Debug\AK-GesInf.csproj.GenerateResource.Cache
 D:\VisualStudio\projects\AK-GesInf\AK-GesInf\obj\Debug\AK-GesInf.exe
 D:\VisualStudio\projects\AK-GesInf\AK-GesInf\obj\Debug\AK-GesInf.pdb
+D:\VisualStudio\projects\AK-GesInf\AK-GesInf\obj\Debug\AK_GesInf.Form1.resources

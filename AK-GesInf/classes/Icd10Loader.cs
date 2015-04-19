@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Windows.Forms;
-using System.Xml;
 using AK_GesInf.classes.utils;
 
 namespace AK_GesInf.classes
@@ -16,11 +14,11 @@ namespace AK_GesInf.classes
     {
         private List<Pair<String, String>> content = new List<Pair<String, String>>();
 
-        private const int ERROR = -1;
         private readonly char WHITESPACE = ' ';
 
         public Icd10Loader()
         {
+            ReadIcdFromFile();
         }
 
         public List<Pair<String, String>> Content
